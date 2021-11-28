@@ -134,7 +134,7 @@ const starts = async (kurr = new WAConnection()) => {
 	kurr.logger.level = 'warn'
 	kurr.version = [2, 2140, 12]
 	console.log(color(`\x1b[1;37m> ${tampilUcapan}\n`,'cyan'))
-	console.log(color(figlet.textSync('KurzBotz Assistan', {
+	console.log(color(figlet.textSync('Kendal black hat Assistan', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
@@ -145,14 +145,14 @@ const starts = async (kurr = new WAConnection()) => {
 console.log(color('> WITA ','silver'), color(`${wita}`,'mediumseagreen'))
 console.log(color('> WIT ','silver'), color(`${wit}`,'mediumseagreen'))
 console.log(color('> HARI ','silver'), color(`${tampilHari}\n`,'mediumseagreen'))
-	kurr.browserDescription = [ 'Kurz Botz Asisstan', 'ubuntu', '3.0' ]
+	kurr.browserDescription = [ 'Kendal black hat Assistan', 'ubuntu', '3.0' ]
 
 	kurr.on('qr', () => {
 	console.log(color('[','white'), color('!','red'), color(']','white'), color('SCAN QR NYA'))
 })
 	kurr.on('credentials-updated', () => {
 		fs.writeFileSync('./session.json', JSON.stringify(kurr.base64EncodedAuthInfo(), null, '\t'))
-		info('2', 'Kurz Botz Asisstan Loading...')
+		info('2', 'Kendal black hat Assistan Loading...')
 	})
 	fs.existsSync('./session.json') && kurr.loadAuthInfo('./session.json')
 	kurr.on('connecting', () => {
@@ -213,7 +213,7 @@ kurr.sendMessage(id, buttonMessages, MessageType.buttonsMessage, options)
    // owner
 
 
-    const htod = "6281220670449@s.whatsapp.net"
+    const htod = "628979946741@s.whatsapp.net"
 
     
 
@@ -301,7 +301,7 @@ kurr.on('group-participants-update', async (anu) => {
 
 				teks = `🌹 Hi @${num.split('@')[0]} 👋\n🌹 Selamat Datang Di Group: ${mdata.subject}\n\n Join Pada Jam: ${time} Waktu Server`
 
-				sendButImage(anu.jid, teks, `KurzBotz-Assistan`, img,but = [{buttonId:`donasi`, 
+				sendButImage(anu.jid, teks, `KendalBlackHat`, img,but = [{buttonId:`donasi`, 
 
                buttonText:{displayText: 'WELCOME'},type:1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
@@ -315,7 +315,7 @@ kurr.on('group-participants-update', async (anu) => {
 
 				} catch {
 
-					ppUrl = 'https://i.ibb.co/6BRf4Rc/Hans-Bot-No-Profile.png'
+					ppUrl = 'https://f.top4top.io/p_2158h9g5d0.jpg'
 
 				}
 
@@ -323,7 +323,7 @@ kurr.on('group-participants-update', async (anu) => {
 
 				teks = `Daahh @${num.split('@')[0]}\nSelamat Tinggal Di Group: ${mdata.subject}`
 
-				sendButImage(anu.jid, teks, `KurzBotz-Assistan`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SAYONARA !!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
+				sendButImage(anu.jid, teks, `NksBot-Assistan`, img,but = [{buttonId: `Hello World!`, buttonText: {displayText: `SAYONARA !!`}, type: 1}], options = {contextInfo: {mentionedJid: [num, htod]}})
 
 			} else if (anu.action == 'promote') {
 
@@ -396,8 +396,8 @@ kurr.on('group-update', async (anu) => {
 	})
     kurr.on('chat-update', async (message) => {
         require('./kurr.js')(kurr, message)
-        ownerNumber = ["6281220670449@s.whatsapp.net","6281220670449@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
-        dtod = "6281220670449@s.whatsapp.net"
+        ownerNumber = ["628979946741@s.whatsapp.net","628979946741@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
+        dtod = "628979946741@s.whatsapp.net"
        otod = `${settings.NomorOwner}@s.whatsapp.net`
     })  
 }
